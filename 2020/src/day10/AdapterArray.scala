@@ -1,7 +1,6 @@
 package day10
 
 import scala.io.Source
-import java.io.File
 
 object AdapterArray extends App {
   val s = Source.fromFile("src/day10/input.txt")
