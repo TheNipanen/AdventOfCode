@@ -42,6 +42,7 @@ object TobogganTrajectory extends App {
     iLen += 1
     line = reader.readLine()
   }
+  s.close()
   println(iLen)
   println("Trees1: " + trees1)
   println("Trees2: " + trees2)

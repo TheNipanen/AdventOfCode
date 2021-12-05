@@ -5,6 +5,7 @@ import scala.io.Source
 object AdapterArray extends App {
   val s = Source.fromFile("src/day10/input.txt")
   val a = s.getLines().toArray.map( _.toInt ).sorted.zipWithIndex
+  s.close()
   val l = a.length
   var i = 0
   val differences = scala.collection.mutable.HashMap[Int, Int]()

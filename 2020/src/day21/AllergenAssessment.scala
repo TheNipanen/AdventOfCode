@@ -21,6 +21,7 @@ object AllergenAssessment extends App {
     }
     line = r.readLine()
   }
+  s.close()
   val L = allergenes.size
   
   var count = 0

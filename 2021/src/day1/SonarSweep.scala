@@ -15,10 +15,12 @@ object SonarSweep extends App {
     }
     line = nextLine
   }
+  s.close()
   println("Measurement increases: " + increaseCount)
   
   val ss = Source.fromFile("src/day1/input.txt")
   val measurements = ss.getLines().toArray.map( _.toInt )
+  ss.close()
   var i = 3
   var prevSum = measurements(0) + measurements(1) + measurements(2)
   increaseCount = 0

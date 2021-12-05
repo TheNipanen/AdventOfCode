@@ -48,6 +48,7 @@ object TicketTranslation extends App {
     }
     line = r.readLine()
   }
+  s.close()
   //myTicket.foreach(println(_))
   
   println("Ticket scanning error rate: " + error)

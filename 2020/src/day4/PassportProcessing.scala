@@ -75,5 +75,6 @@ object PassportProcessing extends App {
     if (validPP) valid += 1
     line = reader.readLine()
   }
+  s.close()
   println("Valid passports: " + valid)
 }

@@ -21,6 +21,7 @@ object CrabCombat extends App {
     p2.enqueue(line.toInt)
     line = r.readLine()
   }
+  s.close()
   val startP1 = p1.clone()
   val startP2 = p2.clone()
   

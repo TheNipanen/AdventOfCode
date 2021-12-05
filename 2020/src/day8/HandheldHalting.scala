@@ -5,6 +5,7 @@ import scala.io.Source
 object HandheldHalting extends App {
   val s = Source.fromFile("src/day8/input.txt")
   val lines = s.getLines().toArray
+  s.close()
   val n = lines.length
   
   val visited = new Array[Boolean](n)

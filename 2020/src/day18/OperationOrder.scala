@@ -145,6 +145,7 @@ object OperationOrder extends App {
 //    }
     line = r.readLine()
   }
+  s.close()
   println("Sum of results: " + sum)
   println("Sum of results 2: " + sum2)
 }

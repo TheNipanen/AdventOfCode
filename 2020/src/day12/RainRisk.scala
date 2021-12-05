@@ -56,6 +56,7 @@ object RainRisk extends App {
     }
     line = reader.readLine()
   }
+  s.close()
   val dist = math.abs(y) + math.abs(x)
   println("Mahattan distance: " + dist)
   
@@ -110,6 +111,7 @@ object RainRisk extends App {
     }
     line = r.readLine()
   }
+  ss.close()
   val dist2 = math.abs(y) + math.abs(x)
   println("Mahattan distance again: " + dist2)
 }

@@ -43,9 +43,11 @@ object EncodingError extends App {
       line = reader.readLine()
     }
   }
+  s.close()
   
   val ss = Source.fromFile("src/day9/input.txt")
   val a = ss.getLines().toArray.map( _.toLong )
+  ss.close()
   a.foreach(println(_))
   val l = a.length
   var found = false

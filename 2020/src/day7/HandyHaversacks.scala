@@ -20,6 +20,7 @@ object HandyHaversacks extends App {
     bagContains(start) = innards
     line = reader.readLine()
   }
+  s.close()
   
   def inner(bag: String): Int = {
     val innards = bagContains(bag)

@@ -36,6 +36,7 @@ object DockingData extends App {
     }
     line = reader.readLine()
   }
+  s.close()
   val sum = mem.values.sum
   println("Sum of memory values: " + sum)
   
@@ -102,6 +103,7 @@ object DockingData extends App {
     }
     line = r.readLine()
   }
+  ss.close()
   val sum2 = memory.values.sum
   println("Sum of memory values again: " + sum2)
 }

@@ -23,5 +23,6 @@ object CustomCustoms extends App {
     totalCount += count
     line = reader.readLine()
   }
+  s.close()
   println(totalCount)
 }

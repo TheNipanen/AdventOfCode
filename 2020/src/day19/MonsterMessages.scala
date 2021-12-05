@@ -144,5 +144,6 @@ object MonsterMessages extends App {
     if (found.isDefined && found.get == line) count += 1
     line = r.readLine()
   }
+  s.close()
   println("Rules matching rule 0: " + count)
 }

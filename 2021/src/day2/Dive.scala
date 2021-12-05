@@ -5,6 +5,7 @@ import scala.io.Source
 object Dive extends App {
   val s = Source.fromFile("src/day2/input.txt")
   val commands = s.getLines().toArray.map( _.split(" ") )
+  s.close()
   var pos = 0
   var depth = 0
   for (c <- commands) {

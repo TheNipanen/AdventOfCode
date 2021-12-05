@@ -19,6 +19,7 @@ object JurassicJigsaw extends App {
     }
     images(id) = image.toArray
   }
+  s.close()
   val gL = math.sqrt(images.size)
   //println(gL)
   assert(gL == gL.toInt)

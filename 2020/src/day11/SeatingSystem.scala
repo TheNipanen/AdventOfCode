@@ -5,6 +5,7 @@ import scala.io.Source
 object SeatingSystem extends App {
   val s = Source.fromFile("src/day11/input.txt")
   val orig = s.getLines().toArray.map( _.toCharArray() )
+  s.close()
   var current = orig.clone().map( _.clone() )
   var next = current.clone().map( _.clone() )
   val yL = current.length

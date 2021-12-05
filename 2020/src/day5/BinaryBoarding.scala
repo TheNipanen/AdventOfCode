@@ -48,6 +48,7 @@ object BinaryBoarding extends App {
     if (ID > highest) highest = ID
     line = reader.readLine()
   }
+  s.close()
   
   println("Max: " + maxSeatID)
   println("Highest ID: " + highest)

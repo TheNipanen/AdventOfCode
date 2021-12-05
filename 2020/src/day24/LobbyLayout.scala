@@ -43,6 +43,7 @@ object LobbyLayout extends App {
     parse(line)
     line = r.readLine()
   }
+  s.close()
   val blacks = color.values.filter( b => b ).size
   println("Black tiles: " + blacks)
   def limits = {
