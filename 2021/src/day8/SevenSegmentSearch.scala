@@ -6,6 +6,7 @@ import scala.collection.mutable.HashMap
 object SevenSegmentSearch extends App {
   val s = Source.fromFile("src/day8/input.txt")
   val lines = s.getLines().toArray
+  s.close()
   
   val digits = lines.map( _.split('|')(1).trim.split(" ") ).flatten
   val uniqueDigits = digits.count( d => d.size == 2 || d.size == 4 || d.size == 3 || d.size == 7 )
