@@ -5,6 +5,7 @@ import scala.io.Source
 object DumboOctopus extends App {
   val s = Source.fromFile("src/day11/input.txt")
   var grid = s.getLines.toArray.map( _.split("").map( _.toInt ) )
+  s.close()
   var nextGrid = Array.ofDim[Int](10,10)
   var flashes = 0
   
