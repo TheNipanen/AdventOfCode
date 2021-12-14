@@ -6,6 +6,7 @@ import scala.collection.mutable.HashMap
 object ExtendedPolymerization extends App {
   val s = Source.fromFile("src/day14/input.txt")
   val lines = s.getLines().toArray
+  s.close()
   var current = lines(0)
   val rules = HashMap[String,Char]()
   for (i <- 2 until lines.size) {
