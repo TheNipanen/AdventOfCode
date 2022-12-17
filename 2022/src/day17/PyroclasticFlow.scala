@@ -31,7 +31,7 @@ object PyroclasticFlow extends App {
   val dir = Map('<' -> (-1,0), '>' -> (1,0))
   
   def isOccupied(pos: (Int, Int)): Boolean = {
-    pos._1 < 0 || pos._1 > 6 || pos._2 < 0 || grid(pos)
+    pos._1 < leftWallX || pos._1 > rightWallX || pos._2 < floorY || grid(pos)
   }
   def isOccupied(pos: (Int, Int), rock: Array[(Int, Int)]): Boolean = {
     rock.exists( r => { val p = (pos._1 + r._1, pos._2 + r._2); isOccupied(p) } )
