@@ -95,3 +95,6 @@ Seminar/cs-e4000-template/*.pdf
 
 ### .vscode ###
 */.vscode/
+
+### Lib that can't be shared ###
+2024/src/lib/
