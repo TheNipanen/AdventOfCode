@@ -3,7 +3,7 @@ import scala.io.Source
 
 object SecretEntrance extends App {
 	val s = Source.fromFile("src/day1/input.txt")
-	val lines = s.getLines().toArray
+	val lines = try s.getLines().toArray finally s.close()
 	
 	var current = 50
 	var zeroes = 0
